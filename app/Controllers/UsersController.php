@@ -6,6 +6,10 @@ use SON\Controller;
 
 class UsersController extends Controller
 {
+    public function __construct(User $model) {
+        $this->model = $model;
+    }
+
     public function index()
     {
         $user = $this->model->get();
