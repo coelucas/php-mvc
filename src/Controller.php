@@ -4,6 +4,10 @@ namespace SON;
 
 class Controller {
 
+    public function __construct(Model $model) {
+        $this->model = $model;
+    }
+
     protected function render(array $data = [], string $view = null)
     {
         if(!$view) {

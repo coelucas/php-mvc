@@ -8,7 +8,8 @@ class UsersController extends Controller
 {
     public function index()
     {
-        $this->render(['nome' => 'Lucas']);
+        $user = $this->model->get();
+        $this->render($user);
     }
 
     public function create()
