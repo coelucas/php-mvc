@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use SON\Controller;
+use App\Models\User;
 
 class UsersController extends Controller
 {
